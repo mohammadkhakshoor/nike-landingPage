@@ -3,11 +3,12 @@ import { hamburger } from "../assets/icons";
 import { navLinks } from "../constants";
 import { useState } from "react";
 const Nav = () => {
-    const [toggleNav, setToggleNav] = useState(false);
+    const [toggleNav, setToggleNav] = useState(true);
 
     const navBarToggler = function () {
         setToggleNav((val) => !val);
     };
+
     return (
         <header className=" padding-x py-8 absolute z-10 w-full ">
             <nav className=" flex justify-between   items-center max-container ">
