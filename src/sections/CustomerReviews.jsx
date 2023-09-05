@@ -18,7 +18,7 @@ const CustomerReviews = () => {
                     return (
                         <div
                             key={rew.customerName}
-                            className="w-full sm:w-[350px] flex flex-col items-center"
+                            className="w-full sm:w-[350px] flex flex-col items-center mb-10"
                         >
                             <img
                                 className=" rounded-full"

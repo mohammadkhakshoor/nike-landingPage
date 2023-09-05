@@ -22,6 +22,20 @@
         @apply sm:flex-1 max-sm:w-full text-base leading-normal text-slate-gray max-sm:p-5 pl-5 outline-none sm:border-none border max-sm:border-slate-gray rounded-full;
     }
 }
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    65% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.customAnimation {
+    animation: fade 1s ease;
+}
 
 @layer utilities {
     .padding {

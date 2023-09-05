@@ -2,7 +2,7 @@ import PopularProductCard from "../components/PopularProductCard";
 import { products } from "../constants";
 const PopularProducts = () => {
     return (
-        <section className=" max-container flex  flex-col">
+        <section id="products" className=" max-container flex  flex-col">
             <div>
                 <div>
                     <h2 className="font-palanquin text-4xl mb-10 font-bold">
