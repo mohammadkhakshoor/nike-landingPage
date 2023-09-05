@@ -1,6 +1,6 @@
 const Subscribe = () => {
     return (
-        <section id="subscribe" className="max-container max-sm:pb-20">
+        <section className="max-container max-sm:pb-20">
             <div className="flex flex-col sm:flex-row  gap-10  sm:items-center sm:justify-center flex-wrap">
                 <h3 className=" text-4xl font-bold max-sm:text-center  font-palanquin max-sm:text-[48px] max-sm:leading-[48px]  leading-normal">
                     Sign Up for
