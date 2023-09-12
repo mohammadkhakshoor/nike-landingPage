@@ -17,25 +17,28 @@ const App = () => {
       <section className="xl:padding-l wide:padding-r padding-b dark:bg-darkback">
         <Hero />
       </section>
-      <section className="padding">
+      <section className="  dark:bg-darkback padding">
         <PopularProducts />
       </section>
-      <section className="padding">
+      <section className="  dark:bg-darkback padding">
         <SuperQuality />
       </section>
-      <section className="padding ">
+      <section className="  dark:bg-darkback padding ">
         <Services />
       </section>
-      <section className="padding ">
+      <section className="  dark:bg-darkback padding ">
         <SpecialOffer />
       </section>
-      <section className="padding bg-pale-blue">
+      <section className="  dark:bg-darkbacklight padding bg-pale-blue">
         <CustomerReviews />
       </section>
-      <section id="subscribe" className="padding-x sm:py-32 py16 w-full">
+      <section
+        id="subscribe"
+        className="  dark:bg-darkback padding-x sm:py-32 py16 w-full"
+      >
         <Subscribe />
       </section>
-      <section className="bg-black padding-x padding-y pb-8">
+      <section className="  dark:bg-darkback bg-black padding-x padding-y pb-8">
         <Footer />
       </section>
     </main>

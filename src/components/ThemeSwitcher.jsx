@@ -12,7 +12,7 @@ const ThemeSwitcher = () => {
   }, [toggleTheme]);
   return (
     <button
-      className=" absolute bg-coral-red p-2 left-0 top-10  rounded-r-full hover:bg-amber-500 w-14 hover:w-16 transition-all"
+      className=" absolute bg-coral-red sm:p-2 max-sm:p-1  right-0 top-14  sm:rounded-l-full max-sm:top-3  max-sm:rounded-full max-sm:right-20 active:bg-white max-sm:w-auto hover:max-sm:w-auto  w-12 sm:w-14 hover:w-16 transition-all"
       onClick={() => {
         setToggleTheme((val) => !val);
       }}
