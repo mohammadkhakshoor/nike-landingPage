@@ -2,7 +2,7 @@ import { headerLogo } from "../assets/images/";
 import { hamburger } from "../assets/icons";
 import { navLinks } from "../constants";
 import { useState } from "react";
-import ThemeSwitcher from "./themeSwitcher";
+import ThemeSwitcher from "./ThemeSwitcher";
 const Nav = () => {
   const [toggleNav, setToggleNav] = useState(true);
 
