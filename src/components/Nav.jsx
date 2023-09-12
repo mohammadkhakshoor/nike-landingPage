@@ -44,7 +44,7 @@ const Nav = () => {
         <div onClick={navBarToggler} className="block lg:hidden relative z-20">
           {toggleNav ? (
             <img
-              src={toggleTheme ? hamburgerDark : hamburgerLight}
+              src={toggleTheme ? hamburgerLight : hamburgerDark}
               alt="hamburger"
               width={25}
               height={25}

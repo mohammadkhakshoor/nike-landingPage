@@ -5,8 +5,6 @@ const ThemeSwitcher = ({ toggleTheme, setToggleTheme }) => {
     const doc = document
       .getElementsByTagName("html")[0]
       .classList.toggle("dark");
-
-    console.log(`hi`);
   }, [toggleTheme]);
   return (
     <button
