@@ -1,9 +1,12 @@
 import { headerLogo } from "../assets/images/";
-import { hamburger } from "../assets/icons";
+import { hamburgerDark } from "../assets/icons";
+import { hamburgerLight } from "../assets/icons";
 import { navLinks } from "../constants";
 import { useState } from "react";
 import ThemeSwitcher from "./ThemeSwitcher";
 const Nav = () => {
+  const [toggleTheme, setToggleTheme] = useState(false);
+
   const [toggleNav, setToggleNav] = useState(true);
 
   const navBarToggler = function () {
@@ -12,7 +15,10 @@ const Nav = () => {
 
   return (
     <header className=" padding-x py-4 fixed top-0 z-20 w-full bg-white  dark:bg-darkback  transition-all  ">
-      <ThemeSwitcher />
+      <ThemeSwitcher
+        toggleTheme={toggleTheme}
+        setToggleTheme={setToggleTheme}
+      />
       <nav className=" flex justify-between   items-center max-container ">
         <a href="/">
           <img src={headerLogo} alt="logo" width={130} height={29} />
@@ -37,7 +43,12 @@ const Nav = () => {
 
         <div onClick={navBarToggler} className="block lg:hidden relative z-20">
           {toggleNav ? (
-            <img src={hamburger} alt="hamburger" width={25} height={25} />
+            <img
+              src={toggleTheme ? hamburgerDark : hamburgerLight}
+              alt="hamburger"
+              width={25}
+              height={25}
+            />
           ) : (
             <div className="text-4xl relative bottom-5">&times;</div>
           )}

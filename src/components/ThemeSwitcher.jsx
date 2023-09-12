@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const ThemeSwitcher = () => {
-  const [toggleTheme, setToggleTheme] = useState(false);
-
+const ThemeSwitcher = ({ toggleTheme, setToggleTheme }) => {
   useEffect(() => {
     const doc = document
       .getElementsByTagName("html")[0]
@@ -12,7 +10,7 @@ const ThemeSwitcher = () => {
   }, [toggleTheme]);
   return (
     <button
-      className=" absolute bg-coral-red sm:p-2 max-sm:p-1  right-0 top-14  sm:rounded-l-full max-sm:top-3  max-sm:rounded-full max-sm:right-20 active:bg-white max-sm:w-auto hover:max-sm:w-auto  w-12 sm:w-14 hover:w-16 transition-all"
+      className=" absolute bg-coral-red sm:p-2 max-sm:p-1  right-0 top-14  sm:rounded-l-full max-sm:top-4  max-sm:rounded-full max-sm:right-20 active:bg-white max-sm:w-auto hover:max-sm:w-auto  w-12 sm:w-14 hover:w-16 transition-all"
       onClick={() => {
         setToggleTheme((val) => !val);
       }}
@@ -24,7 +22,7 @@ const ThemeSwitcher = () => {
           viewBox="0 0 24 24"
           strokeWidth="1.5"
           stroke="currentColor"
-          className="w-8 h-8"
+          className="sm:w-8 sm:h-8 max-sm:h-6 max-sm:w-6"
         >
           <path
             strokeLinecap="round"
@@ -39,7 +37,7 @@ const ThemeSwitcher = () => {
           viewBox="0 0 24 24"
           strokeWidth="1.5"
           stroke="currentColor"
-          className="w-8 h-8"
+          className="sm:w-8 sm:h-8 max-sm:h-6 max-sm:w-6"
         >
           <path
             strokeLinecap="round"
