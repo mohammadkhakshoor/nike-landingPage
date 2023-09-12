@@ -64,7 +64,7 @@ const LinkItems = ({ item, setToggleNav }) => {
         onClick={() => {
           setToggleNav(true);
         }}
-        className=" font-montserrat leading-normal  max-lg:text-3xl text-black dark:text-white"
+        className=" font-montserrat leading-normal  max-lg:text-3xl  font-bold  hover:border-b-4 transition-all text-black dark:text-white"
         href={item.href}
       >
         {item.label}
