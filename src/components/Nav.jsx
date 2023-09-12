@@ -5,7 +5,7 @@ import { navLinks } from "../constants";
 import { useState } from "react";
 import ThemeSwitcher from "./ThemeSwitcher";
 const Nav = () => {
-  const [toggleTheme, setToggleTheme] = useState(false);
+  const [toggleTheme, setToggleTheme] = useState(true);
 
   const [toggleNav, setToggleNav] = useState(true);
 
@@ -14,7 +14,7 @@ const Nav = () => {
   };
 
   return (
-    <header className=" padding-x py-4 fixed top-0 z-20 w-full bg-white  dark:bg-darkback  transition-all  ">
+    <header className=" padding-x py-4 fixed top-0 z-20 w-full bg-white  dark:bg-darkback  transition-all  duration-700 ">
       <ThemeSwitcher
         toggleTheme={toggleTheme}
         setToggleTheme={setToggleTheme}

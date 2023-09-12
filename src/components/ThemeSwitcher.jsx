@@ -2,9 +2,8 @@ import React, { useEffect, useState } from "react";
 
 const ThemeSwitcher = ({ toggleTheme, setToggleTheme }) => {
   useEffect(() => {
-    const doc = document
-      .getElementsByTagName("html")[0]
-      .classList.toggle("dark");
+    const doc = document.getElementsByTagName("html")[0];
+    toggleTheme ? doc.classList.add("dark") : doc.classList.remove("dark");
   }, [toggleTheme]);
   return (
     <button

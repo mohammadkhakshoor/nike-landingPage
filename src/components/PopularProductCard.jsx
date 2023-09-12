@@ -14,7 +14,7 @@ const PopularProductCard = ({ product }) => {
           setMovieRate={setRate}
           maxRating={10}
         />
-        <h3 className="font-montserrat leading-normal text-xl mb-2 mt-4 dark:text-white">
+        <h3 className="font-montserrat leading-normal text-xl mb-2 mt-4 dark:text-white transition-all  duration-700">
           {product.name}
         </h3>
         <p className="font-montserrat text-coral-red text-2xl font-bold">

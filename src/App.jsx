@@ -14,31 +14,31 @@ const App = () => {
   return (
     <main>
       <Nav />
-      <section className="xl:padding-l wide:padding-r padding-b dark:bg-darkback">
+      <section className="xl:padding-l wide:padding-r padding-b dark:bg-darkback transition-all  duration-700 ">
         <Hero />
       </section>
-      <section className="  dark:bg-darkback padding">
+      <section className="  dark:bg-darkback transition-all  duration-700  padding">
         <PopularProducts />
       </section>
-      <section className="  dark:bg-darkback padding">
+      <section className="  dark:bg-darkback transition-all  duration-700  padding">
         <SuperQuality />
       </section>
-      <section className="  dark:bg-darkback padding ">
+      <section className="  dark:bg-darkback transition-all  duration-700  padding ">
         <Services />
       </section>
-      <section className="  dark:bg-darkback padding ">
+      <section className="  dark:bg-darkback transition-all  duration-700  padding ">
         <SpecialOffer />
       </section>
-      <section className="  dark:bg-darkbacklight padding bg-pale-blue">
+      <section className="  dark:bg-darkbacklight transition-all  duration-700 light padding bg-pale-blue">
         <CustomerReviews />
       </section>
       <section
         id="subscribe"
-        className="  dark:bg-darkback padding-x sm:py-32 py16 w-full"
+        className="  dark:bg-darkback transition-all  duration-700  padding-x sm:py-32 py16 w-full"
       >
         <Subscribe />
       </section>
-      <section className="  dark:bg-darkback bg-black padding-x padding-y pb-8">
+      <section className="  dark:bg-darkback transition-all  duration-700 bg-black padding-x padding-y pb-8">
         <Footer />
       </section>
     </main>
