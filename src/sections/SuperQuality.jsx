@@ -22,7 +22,7 @@ const SuperQuality = () => {
         <p className=" mb-10 font-montserrat stroke-slate-gray text-[18px] dark:text-white">
           Our dedication to detail and excellence ensures your satisfaction
         </p>
-        <button className=" font-montserrat  leading-6 bg-coral-red px-8 py-4 rounded-[999px] flex  justify-center items-center gap-4 text-[18px] text-white">
+        <button className="btns-hover font-montserrat  leading-6 bg-coral-red px-8 py-4 rounded-[999px] flex  justify-center items-center gap-4 text-[18px] text-white">
           <span>shop now</span>
           <span>
             <img

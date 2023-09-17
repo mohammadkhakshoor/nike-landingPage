@@ -4,9 +4,7 @@ import { hamburgerLight } from "../assets/icons";
 import { navLinks } from "../constants";
 import { useState } from "react";
 import ThemeSwitcher from "./ThemeSwitcher";
-const Nav = () => {
-  const [toggleTheme, setToggleTheme] = useState(false);
-
+const Nav = ({ toggleTheme, setToggleTheme }) => {
   const [toggleNav, setToggleNav] = useState(true);
 
   const navBarToggler = function () {

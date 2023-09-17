@@ -19,7 +19,9 @@ body {
     max-width: 1440px;
     margin: 0 auto;
   }
-
+  .btns-hover {
+    @apply hover:translate-y-[-0.25rem] transition-all hover:bg-red-600 active:translate-y-0 active:shadow-xl;
+  }
   .input {
     @apply sm:flex-1 max-sm:w-full text-base leading-normal text-slate-gray max-sm:p-5 pl-5 outline-none sm:border-none border max-sm:border-slate-gray rounded-full dark:bg-transparent;
   }

@@ -1,4 +1,5 @@
 // import React from "react";
+
 import {
   Hero,
   Footer,
@@ -10,15 +11,18 @@ import {
   Subscribe,
 } from "./sections";
 import Nav from "./components/Nav";
+import { useState } from "react";
 const App = () => {
+  const [toggleTheme, setToggleTheme] = useState(false);
+
   return (
     <main>
-      <Nav />
+      <Nav toggleTheme={toggleTheme} setToggleTheme={setToggleTheme} />
       <section className="xl:padding-l wide:padding-r padding-b dark:bg-darkback transition-all  duration-700 ">
         <Hero />
       </section>
       <section className="  dark:bg-darkback transition-all  duration-700  padding">
-        <PopularProducts />
+        <PopularProducts toggleTheme={toggleTheme} />
       </section>
       <section className="  dark:bg-darkback transition-all  duration-700  padding">
         <SuperQuality />

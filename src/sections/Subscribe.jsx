@@ -2,7 +2,7 @@ const Subscribe = () => {
   return (
     <section className="max-container max-sm:pb-20">
       <div className="flex flex-col sm:flex-row  gap-10  sm:items-center sm:justify-center flex-wrap pt-10">
-        <h3 className=" text-4xl font-bold max-sm:text-center  font-palanquin max-sm:text-[48px] max-sm:leading-[48px]  leading-normal">
+        <h3 className=" text-4xl font-bold max-sm:text-center  lg:w-[35rem]  text-center  font-palanquin max-sm:text-[48px] max-sm:leading-[48px]  leading-normal">
           <span className="dark:text-white">Sign Up for</span>{" "}
           <span className=" text-coral-red  inline-block">Updates </span>
           <span className="dark:text-white"> & Newsletter</span>
@@ -15,7 +15,7 @@ const Subscribe = () => {
             name="subscribe"
             id="subscribe"
           />
-          <button className="font-montserrat max-sm:w-full  leading-6 bg-coral-red px-8 py-4 rounded-[999px] flex  justify-center items-center gap-4 text-[18px] text-white">
+          <button className="hover:bg-red-500  transition-all  font-montserrat max-sm:w-full  leading-6 bg-coral-red px-8 py-4 rounded-[999px] flex  justify-center items-center gap-4 text-[18px] text-white">
             sign Up
           </button>
         </form>

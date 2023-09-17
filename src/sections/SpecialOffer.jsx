@@ -28,7 +28,7 @@ const SpecialOffer = () => {
           nothing short of exceptional.{" "}
         </p>
         <div className="flex flex-col lg:flex-row  gap-3">
-          <button className=" font-montserrat  leading-6 bg-coral-red px-8 py-4 rounded-[999px] flex  justify-center items-center gap-4 text-[18px] text-white">
+          <button className="btns-hover font-montserrat  leading-6 bg-coral-red px-8 py-4 rounded-[999px] flex  justify-center items-center gap-4 text-[18px] text-white">
             <span>shop now</span>
             <span>
               <img
